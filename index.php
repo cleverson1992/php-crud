@@ -11,7 +11,47 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+    <div class="container" style="margin-top: 60px;">
+      <form>
+        <div class="form-group">
+          <label >Nro do Produto</label>
+          <input type="number" class="form-control" placeholder="Insira o numero do produto">
+        </div>
+
+        <div class="form-group">
+          <label >Nome do  Produto</label>
+          <input type="text" class="form-control" placeholder="Insira o nome do produto">
+        </div>
+
+        <div class="form-group">
+          <label >Categoria</label>
+          <select class="form-control">
+            <option>Perifericos</option>
+            <option>Hardware</option>
+            <option>Software</option>
+            <option>Celulares</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label >Quantidade</label>
+          <input type="number" class="form-control" placeholder="Insira a quantidade do produto">
+        </div>
+
+        <div class="form-group">
+          <label >Fornecedor</label>
+          <select class="form-control">
+            <option>Fornecedor A</option>
+            <option>Fornecedor B</option>
+            <option>Fornecedor C</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-sm">Cadastrar</button>
+
+      </form>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
