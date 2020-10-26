@@ -8,25 +8,36 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Cadastro de produto</title>
+
+    <!-- style local -->
+    <style type="text/css">
+      
+      #tamanhoContainer {
+        width: 500px;
+      }
+
+    </style>
+
   </head>
   <body>
     
-    <div class="container" style="margin-top: 60px;">
-      <form>
+    <div class="container mt-5" id="tamanhoContainer" >
+      <h4 class="mb-4">Formulário de Cadastro</h4>
+      <form action="_inserir_produto.php" method="post">
         <div class="form-group">
           <label >Nro do Produto</label>
-          <input type="number" class="form-control" placeholder="Insira o numero do produto">
+          <input type="number" class="form-control" name="nroproduto" placeholder="Insira o numero do produto">
         </div>
 
         <div class="form-group">
           <label >Nome do  Produto</label>
-          <input type="text" class="form-control" placeholder="Insira o nome do produto">
+          <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do produto" required>
         </div>
 
         <div class="form-group">
           <label >Categoria</label>
-          <select class="form-control">
+          <select class="form-control" name="categoria">
             <option>Perifericos</option>
             <option>Hardware</option>
             <option>Software</option>
@@ -36,19 +47,21 @@
 
         <div class="form-group">
           <label >Quantidade</label>
-          <input type="number" class="form-control" placeholder="Insira a quantidade do produto">
+          <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto">
         </div>
 
         <div class="form-group">
           <label >Fornecedor</label>
-          <select class="form-control">
+          <select class="form-control" name="fornecedor">
             <option>Fornecedor A</option>
             <option>Fornecedor B</option>
             <option>Fornecedor C</option>
           </select>
         </div>
 
-        <button type="submit" class="btn btn-success btn-sm">Cadastrar</button>
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
+        </div>
 
       </form>
     </div>
