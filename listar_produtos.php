@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <title>Listar Produtos</title>
 
     <!-- style local -->
@@ -30,6 +33,7 @@
             <th scope="col">Categoria</th>
             <th scope="col">Quantidade</th>
             <th scope="col">Fornecedor</th>
+            <th scope="col">Ação</th>
           </tr>
         </thead>
 
@@ -51,11 +55,16 @@
           ?>
         
           <tr>
+
             <td><?php echo $nroproduto ?> </td>
             <td><?php echo $nomeproduto ?> </td>
             <td><?php echo $categoria ?> </td>
             <td><?php echo $quantidade ?> </td>
             <td><?php echo $fornecedor ?> </td>
+            <td>
+              <a class="btn btn-warning btn-sm text-light" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-edit"></i> &nbsp; Editar</a>
+            </td>
+
           </tr>
 
           <?php } ?>
