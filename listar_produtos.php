@@ -61,8 +61,12 @@
             <td><?php echo $categoria ?> </td>
             <td><?php echo $quantidade ?> </td>
             <td><?php echo $fornecedor ?> </td>
-            <td>
-              <a class="btn btn-warning btn-sm text-light" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-edit"></i> &nbsp; Editar</a>
+            <td class="d-flex justify-content-center">
+              <a class="btn btn-warning btn-sm text-light" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-edit"></i> Editar</a>
+
+              &nbsp;
+
+              <a class="btn btn-danger btn-sm text-light" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-trash-alt"></i>  Excluir</a>
             </td>
 
           </tr>
