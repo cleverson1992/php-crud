@@ -8,64 +8,36 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Cadastro de produto</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <!-- style local -->
-    <style type="text/css">
-      
-      #tamanhoContainer {
-        width: 500px;
-      }
-
-    </style>
-
+    <title>Menu</title>
+  
   </head>
   <body>
-    
-    <div class="container mt-5" id="tamanhoContainer" >
-      <h4 class="mb-4">Formulário de Cadastro</h4>
-      <form action="_inserir_produto.php" method="post">
-        <div class="form-group">
-          <label >Nro do Produto</label>
-          <input type="number" class="form-control" name="nroproduto" placeholder="Insira o numero do produto">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Adicionar Produto</h5>
+              <p class="card-text">Adiconar produtos em nosso estoque.</p>
+              <a href="adicionar_produto.php" class="btn btn-primary"> <i class="fas fa-pen mr-2"></i> Cadastrar Produto</a>
+            </div>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label >Nome do  Produto</label>
-          <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do produto" required>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lista de Produto</h5> 
+              <p class="card-text">Visualizar, Editar e Excluir produtos.</p>
+              <a href="listar_produtos.php" class="btn btn-primary"> <i class="fas fa-list-alt mr-2"></i> Produtos</a>
+            </div>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label >Categoria</label>
-          <select class="form-control" name="categoria">
-            <option>Perifericos</option>
-            <option>Hardware</option>
-            <option>Software</option>
-            <option>Celulares</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label >Quantidade</label>
-          <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto">
-        </div>
-
-        <div class="form-group">
-          <label >Fornecedor</label>
-          <select class="form-control" name="fornecedor">
-            <option>Fornecedor A</option>
-            <option>Fornecedor B</option>
-            <option>Fornecedor C</option>
-          </select>
-        </div>
-
-        <div class="d-flex justify-content-end">
-          <button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
-        </div>
-
-      </form>
+      </div>
     </div>
-
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

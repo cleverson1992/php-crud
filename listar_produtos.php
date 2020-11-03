@@ -13,11 +13,6 @@
 
     <title>Listar Produtos</title>
 
-    <!-- style local -->
-    <style type="text/css">
-      
-    </style>
-
   </head>
   <body>
     
@@ -62,11 +57,9 @@
             <td><?php echo $quantidade ?> </td>
             <td><?php echo $fornecedor ?> </td>
             <td class="d-flex justify-content-center">
-              <a class="btn btn-warning btn-sm text-light" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-edit"></i> Editar</a>
+              <a class="btn btn-warning btn-sm text-light mr-2" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-edit mr-1"> </i> Editar</a>
 
-              &nbsp;
-
-              <a class="btn btn-danger btn-sm text-light" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-trash-alt"></i>  Excluir</a>
+              <a class="btn btn-danger btn-sm text-light" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"> <i class="fas fa-trash-alt mr-1"> </i> Excluir</a>
             </td>
 
           </tr>
@@ -77,6 +70,9 @@
       
     </div>
 
+    <div class="container">    
+      <a href="index.php" role="button" class="btn btn-primary float-right"> <i class="fas fa-home mr-2"></i> Inicio </a>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
